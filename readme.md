@@ -20,28 +20,28 @@ This project is developed and maintained by the [Resources team][team].
 
 | Repo | License | Last Commit Time |
 |------|--------|-----------------|
-| [RediSearch/RediSearch](https://github.com/RediSearch/RediSearch) | Apache License | 2024-05-29 15:41:31 |
-| [RedisBloom/RedisBloom](https://github.com/RedisBloom/RedisBloom) | Redis Source Available License 2.0 | 2024-05-21 22:02:49 |
-| [RedisTimeSeries/RedisTimeSeries](https://github.com/RedisTimeSeries/RedisTimeSeries) | Redis Source Available License 2.0 | 2024-05-16 17:00:25 |
-| [RedisGears/RedisGears](https://github.com/RedisGears/RedisGears) | Redis Source Available License 2.0 | 2024-05-13 16:34:23 |
+| [RedisTimeSeries/RedisTimeSeries](https://github.com/RedisTimeSeries/RedisTimeSeries) | Redis Source Available License 2.0 | 2026-06-11 22:04:27 |
+| [RediSearch/RediSearch](https://github.com/RediSearch/RediSearch) | Redis Source Available License 2.0 | 2026-06-11 20:03:05 |
+| [RedisBloom/RedisBloom](https://github.com/RedisBloom/RedisBloom) | Redis Source Available License 2.0 | 2026-06-10 15:41:34 |
+| [ayarotsky/redis-shield](https://github.com/ayarotsky/redis-shield) | MIT License | 2026-06-02 10:17:33 |
+| [aviggiano/redis-roaring](https://github.com/aviggiano/redis-roaring) | MIT License | 2026-05-08 02:45:23 |
+| [sewenew/redis-llm](https://github.com/sewenew/redis-llm) | Apache License | 2026-05-02 07:07:18 |
+| [brandur/redis-cell](https://github.com/brandur/redis-cell) | MIT License | 2026-02-14 10:31:37 |
+| [tair-opensource/TairHash](https://github.com/tair-opensource/TairHash) | Apache License | 2026-01-26 14:44:38 |
+| [RedisGears/RedisGears](https://github.com/RedisGears/RedisGears) | Redis Source Available License 2.0 | 2025-08-28 18:16:50 |
+| [RedisAI/RedisAI](https://github.com/RedisAI/RedisAI) | Redis Source Available License 2.0 | 2025-08-20 09:34:36 |
+| [tair-opensource/TairGis](https://github.com/tair-opensource/TairGis) | Apache License | 2025-06-05 14:50:39 |
+| [tair-opensource/TairString](https://github.com/tair-opensource/TairString) | Apache License | 2024-11-13 10:31:39 |
 | [tzongw/redis-timer](https://github.com/tzongw/redis-timer) | MIT License | 2024-05-03 15:26:22 |
-| [brandur/redis-cell](https://github.com/brandur/redis-cell) | MIT License | 2024-04-26 07:50:44 |
-| [aviggiano/redis-roaring](https://github.com/aviggiano/redis-roaring) | MIT License | 2024-04-16 17:05:12 |
-| [RedisAI/RedisAI](https://github.com/RedisAI/RedisAI) | Redis Source Available License 2.0 | 2024-04-05 18:20:29 |
-| [ayarotsky/redis-shield](https://github.com/ayarotsky/redis-shield) | MIT License | 2024-04-02 10:46:09 |
-| [tair-opensource/TairHash](https://github.com/tair-opensource/TairHash) | Apache License | 2023-09-26 17:15:47 |
-| [sewenew/redis-llm](https://github.com/sewenew/redis-llm) | Apache License | 2023-08-21 22:37:14 |
 | [RedisLabs/redisraft](https://github.com/RedisLabs/redisraft) | Redis Source Available License 2.0 | 2023-07-18 15:19:06 |
-| [tair-opensource/TairGis](https://github.com/tair-opensource/TairGis) | Apache License | 2023-05-06 11:53:02 |
 | [wujunwei/redlock](https://github.com/wujunwei/redlock) | MIT License | 2023-02-19 20:51:24 |
 | [tair-opensource/TairZset](https://github.com/tair-opensource/TairZset) | Apache License | 2022-12-06 21:49:47 |
-| [tair-opensource/TairString](https://github.com/tair-opensource/TairString) | Apache License | 2022-10-09 10:27:46 |
 | [ekzhang/redis-rope](https://github.com/ekzhang/redis-rope) | MIT License | 2022-09-05 00:02:39 |
 | [danitseitlin/redis-interval-sets](https://github.com/danitseitlin/redis-interval-sets) | BSD 3-Clause License | 2022-06-17 11:21:10 |
 | [sewenew/redis-protobuf](https://github.com/sewenew/redis-protobuf) | Apache License | 2022-06-13 21:55:48 |
 | [halaei/lqrm](https://github.com/halaei/lqrm) | BSD 3-Clause License | 2022-01-18 19:56:38 |
 | [starkdg/reventis](https://github.com/starkdg/reventis) | Redis Source Available License | 2021-10-31 15:41:10 |
-| [OhBonsai/RedisTree](https://github.com/OhBonsai/RedisTree) | Apache License | 2021-07-07 10:00:51 |
+| [OhBonsai/RedisTree](https://github.com/OhBonsai/RedisTree) | MIT License | 2021-07-07 10:00:51 |
 | [usmanm/redis-tdigest](https://github.com/usmanm/redis-tdigest) | MIT License | 2021-01-14 15:14:41 |
 | [RedisLabsModules/secondary](https://github.com/RedisLabsModules/secondary) | GNU GPL | 2020-10-19 17:55:29 |
 | [starkdg/Redis-ImageScout](https://github.com/starkdg/Redis-ImageScout) | Redis Source Available License | 2020-10-01 22:13:18 |
@@ -53,7 +53,7 @@ This project is developed and maintained by the [Resources team][team].
 | [poga/redis-percentile](https://github.com/poga/redis-percentile) | MIT License | 2019-12-26 18:00:34 |
 | [f0rmiga/sessiongate](https://github.com/f0rmiga/sessiongate) | MIT License | 2019-11-11 15:10:07 |
 | [RedisLabsModules/RedisX](https://github.com/RedisLabsModules/RedisX) | Redis Source Available License | 2019-11-01 10:08:36 |
-| [RedisLabsModules/redex](https://github.com/RedisLabsModules/redex) | MIT License | 2019-07-25 11:32:34 |
+| [RedisLabsModules/redex](https://github.com/RedisLabsModules/redex) | GNU GPL | 2019-07-25 11:32:34 |
 | [RedisLabsModules/topk](https://github.com/RedisLabsModules/topk) | GNU GPL | 2019-07-16 15:48:48 |
 | [RedisLabsModules/countminsketch](https://github.com/RedisLabsModules/countminsketch) | GNU GPL | 2019-07-16 15:47:33 |
 | [sklivvz/cthulhu](https://github.com/sklivvz/cthulhu) | BSD 3-Clause License | 2019-06-28 11:09:41 |

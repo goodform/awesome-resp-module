@@ -230,11 +230,24 @@ def step_format(args):
     tmp_dir = str(DEFAULT_TMP_DIR)
     _prepare_tmp_dir(tmp_dir)
 
+    total = len(entries)
     rows = []
-    for url, branch in entries:
+    succeeded = 0
+    failed = 0
+    print(f"==> Cloning and inspecting {total} repositor{'y' if total == 1 else 'ies'}...")
+    for idx, (url, branch) in enumerate(entries, start=1):
+        prefix = f"[{idx}/{total}]"
+        branch_hint = f" (branch={branch})" if branch else ""
+        print(f"{prefix} {url}{branch_hint}", flush=True)
         row = collect_repo_row(url, branch, tmp_dir)
         if row is not None:
             rows.append(row)
+            succeeded += 1
+            print(f"{prefix}   -> ok | {row[1]} | {row[2]}", flush=True)
+        else:
+            failed += 1
+            print(f"{prefix}   -> FAILED", flush=True)
+    print(f"==> Done: {succeeded} ok, {failed} failed, {total} total")
 
     table_md = render_table(rows)
     readme_text = render_readme(template_text, table_md)
