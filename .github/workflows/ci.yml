@@ -19,16 +19,16 @@ jobs:
           python-version: '3.x'
       - name: Install Python deps
         run: pip install pyyaml
-      # 第一步：仅 format（不跑 lint），重新生成 readme.md
+      # Step 1: format only (skip lint), regenerating readme.md.
       - name: Format readme.md from libraries.yml
         run: python3 scripts/format-awesome-resp.py --no-lint
-      # 第二步：校验 readme.md 与 PR 提交版本一致；不一致 → 提示贡献者本地先 format
+      # Step 2: verify the regenerated readme.md matches the committed version.
       - name: Ensure readme.md is up-to-date with libraries.yml
         run: |
           if ! git diff --exit-code -- readme.md; then
             echo "::error::readme.md is out of sync with libraries.yml. Run scripts/format-awesome-resp.py locally and commit the result."
             exit 1
           fi
-      # 第三步：对（与仓库提交一致的）readme.md 跑 awesome-lint
+      # Step 3: run awesome-lint against the (now-verified) readme.md.
       - name: awesome-lint readme.md
         run: npx awesome-lint

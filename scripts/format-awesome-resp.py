@@ -28,8 +28,8 @@ import yaml
 # Shared constants & paths
 # ---------------------------------------------------------------------------
 
-# 仓库根 = 本脚本所在目录的父目录；用作默认输入/输出路径的锚点，
-# 这样无论从哪个 cwd 运行脚本都能找到 libraries.yml / readme.md.tpl / readme.md。
+# Repository root = parent directory of this script. It anchors the default
+# input/output paths so the script works regardless of the cwd it is run from.
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 DEFAULT_LIBRARIES_FILE = REPO_ROOT / "libraries.yml"
@@ -106,8 +106,16 @@ def clone_repo(url, branch, dest_root):
         cmd += ["-b", branch, "--single-branch"]
     cmd += [url, str(target)]
 
+    # Skip the Git LFS smudge filter. Some repos (e.g. RedisAI) enable LFS,
+    # but when the remote disables LFS, ``git clone`` fails with
+    # "smudge filter lfs failed". We only need the LICENSE files and the last
+    # commit time, never the actual LFS payloads, so setting
+    # GIT_LFS_SKIP_SMUDGE=1 lets the lfs filter pass through pointers as-is.
+    env = os.environ.copy()
+    env["GIT_LFS_SKIP_SMUDGE"] = "1"
+
     try:
-        rc = subprocess.call(cmd)
+        rc = subprocess.call(cmd, env=env)
     except subprocess.CalledProcessError:
         rc = 1
     if rc != 0 or not target.is_dir():
@@ -182,14 +190,27 @@ def _sort_by_commit_desc(row):
 
 
 def render_table(rows):
-    """Render the Markdown table from ``rows`` (list of 3-cell lists)."""
+    """Render the Markdown table from ``rows`` (list of 3-cell lists).
+
+    Cells are padded so that pipes are vertically aligned, satisfying the
+    ``remark-lint:table-pipe-alignment`` and ``remark-lint:table-cell-padding``
+    rules used by ``awesome-lint``.
+    """
     rows_sorted = sorted(rows, key=_sort_by_commit_desc, reverse=True)
-    header_line = "| " + " | ".join(TABLE_HEADERS) + " |"
-    separator_line = "|-" + "-|".join("-" * len(h) for h in TABLE_HEADERS) + "-|"
-    body = [
-        "| " + " | ".join(str(cell) for cell in row) + " |"
-        for row in rows_sorted
-    ]
+    str_rows = [[str(c) for c in row] for row in rows_sorted]
+    headers = list(TABLE_HEADERS)
+    widths = [len(h) for h in headers]
+    for row in str_rows:
+        for i, cell in enumerate(row):
+            if len(cell) > widths[i]:
+                widths[i] = len(cell)
+
+    def fmt_row(cells):
+        return "| " + " | ".join(cell.ljust(widths[i]) for i, cell in enumerate(cells)) + " |"
+
+    header_line = fmt_row(headers)
+    separator_line = "| " + " | ".join("-" * widths[i] for i in range(len(headers))) + " |"
+    body = [fmt_row(row) for row in str_rows]
     return "\n".join([header_line, separator_line, *body])
 
 

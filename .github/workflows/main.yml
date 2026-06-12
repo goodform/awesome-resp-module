@@ -1,7 +1,7 @@
 name: Refresh readme.md
 on:
   schedule:
-    # 每 4 小时整点运行一次（UTC）
+    # Run every 4 hours on the hour (UTC).
     - cron: '0 */4 * * *'
   workflow_dispatch: {}
 jobs:
@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # 需要可写权限把更新后的 readme.md commit & push 回仓库
+          # Write permission so the refreshed readme.md can be pushed back.
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -20,10 +20,10 @@ jobs:
           python-version: '3.x'
       - name: Install Python deps
         run: pip install pyyaml
-      # 跑完整流水线：format readme.md from libraries.yml + 模板，并跑 awesome-lint
+      # Run the full pipeline: format readme.md from libraries.yml + template, then awesome-lint.
       - name: Format and lint readme.md
         run: python3 scripts/format-awesome-resp.py
-      # 仅当 readme.md 实际有变化时才 commit & push
+      # Commit & push only when readme.md actually changes.
       - name: Commit refreshed readme.md
         run: |
           if git diff --quiet -- readme.md; then

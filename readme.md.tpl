@@ -1,20 +1,16 @@
-# Awesome Redis Module
+# Awesome Redis Module [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-
-This is a curated list of resources related to valkey/redis module, including a selection of useful module.
+> A curated list of resources related to Valkey/Redis modules, including a selection of useful modules.
 
 This project is developed and maintained by the [Resources team][team].
 
-## Table of Contents
+## Contents
 
-- [Awesome Redis Module](#awesome-redis-module)
-  - [Table of Contents](#table-of-contents)
-  - [Libraries](#libraries)
-  - [Tools](#tools)
-  - [Resources](#resources)
-  - [License](#license)
-  - [Code of Conduct](#code-of-conduct)
+- [Libraries](#libraries)
+- [SDKs](#sdks)
+- [Tools](#tools)
+- [Resources](#resources)
+- [Contribute](#contribute)
 
 ## Libraries
 
@@ -22,38 +18,26 @@ This project is developed and maintained by the [Resources team][team].
 
 ## SDKs
 
-* [valkey-io/libvalkey: Valkey client library in C](https://github.com/valkey-io/libvalkey)
-* [valkey-io/valkey-go: A fast Golang Valkey client that supports Client Side Caching and Auto Pipelining.](https://github.com/valkey-io/valkey-go)
-* [valkey-io/valkey-py: Valkey Python client based on a fork of redis-py](https://github.com/valkey-io/valkey-py)
-* [valkey-io/iovalkey](https://github.com/valkey-io/iovalkey)
-* [valkey-io/jackey: Java client for Valkey.](https://github.com/valkey-io/jackey)
+- [valkey-io/libvalkey](https://github.com/valkey-io/libvalkey) - Valkey client library in C.
+- [valkey-io/valkey-go](https://github.com/valkey-io/valkey-go) - A fast Golang Valkey client that supports Client Side Caching and Auto Pipelining.
+- [valkey-io/valkey-py](https://github.com/valkey-io/valkey-py) - Valkey Python client based on a fork of redis-py.
+- [valkey-io/iovalkey](https://github.com/valkey-io/iovalkey) - Valkey client for Node.js, ported from ioredis.
+- [valkey-io/jackey](https://github.com/valkey-io/jackey) - Java client for Valkey.
 
 ## Tools
 
-* [goodform/valkey-module-template: Valkey Module Template, help you to quick start.](https://github.com/goodform/valkey-module-template)
-* [goodform/valkey-module-template: Valkey Module Template, help you to quick start.](https://github.com/goodform/valkey-module-template)
-* [valkey-io/valkeymodule-rs: Rust valkey SDK for modules](https://github.com/valkey-io/valkeymodule-rs)
+- [goodform/valkey-module-template](https://github.com/goodform/valkey-module-template) - Valkey module template to help you quick-start a new module.
+- [valkey-io/valkeymodule-rs](https://github.com/valkey-io/valkeymodule-rs) - Rust SDK for writing Valkey modules.
 
 ## Resources
 
-* [GoodFORM: Free and Open Redis Modules](https://goodformcode.com/)
-* [WHAT’S IN A MODULE](https://redis.io/community/redis-modules-hub/how-to-build/)
-* [How to Write a Redis Module in Zig | Redis](https://redis.io/blog/write-redis-module-zig/)
-* [5 Steps to Building a Great Redis Module - Redis](https://redis.io/blog/5-steps-building-great-redis-module/)
+- [GoodFORM: Free and Open Redis Modules](https://goodformcode.com/) - Project home page for the GoodFORM initiative.
+- [What's in a Module](https://redis.io/community/redis-modules-hub/how-to-build/) - Overview of the Redis module API.
+- [How to Write a Redis Module in Zig](https://redis.io/blog/write-redis-module-zig/) - Tutorial on building a Redis module with Zig.
+- [5 Steps to Building a Great Redis Module](https://redis.io/blog/5-steps-building-great-redis-module/) - Best-practice checklist when writing a Redis module.
 
+## Contribute
 
-## License
+Contributions welcome! Read the [contribution guidelines](contributing.md) first.
 
-This list is licensed under
-
-- CC0 1.0 Universal License ([LICENSE-CC0](LICENSE-CC0) or
-  https://creativecommons.org/publicdomain/zero/1.0/legalcode)
-
-## Code of Conduct
-
-Contribution to this crate is organized under the terms of the [Code of
-Conduct][CoC], the maintainer of this crate, the [Resources team][team], promises
-to intervene to uphold that code of conduct.
-
-[CoC]: Code-of-Conduct.md
 [team]: https://github.com/goodform
