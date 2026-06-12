@@ -47,3 +47,10 @@ libraries:
   - url: https://github.com/RedisLabsModules/password.git
   - url: https://github.com/RedisLabsModules/rtexp.git
   - url: https://github.com/RedisLabsModules/graphicsmagick.git
+  - url: https://github.com/valkey-io/valkey-bloom.git
+  - url: https://github.com/valkey-io/valkey-json.git
+  - url: https://github.com/valkey-io/valkey-search.git
+  - url: https://github.com/valkey-io/valkey-ldap.git
+  - url: https://github.com/valkey-io/valkey-luajit.git
+  - url: https://github.com/goodform/valkey-datasketches.git
+  - url: https://github.com/chayim/redicrypt.git
