@@ -16,7 +16,7 @@ This project is developed and maintained by the [Resources team][team].
 
 | Repo                                                                                      | License                            | Last Commit Time    |
 | ----------------------------------------------------------------------------------------- | ---------------------------------- | ------------------- |
-| [RediSearch/RediSearch](https://github.com/RediSearch/RediSearch)                         | Redis Source Available License 2.0 | 2026-06-12 07:16:39 |
+| [RediSearch/RediSearch](https://github.com/RediSearch/RediSearch)                         | Redis Source Available License 2.0 | 2026-06-12 20:29:27 |
 | [RedisTimeSeries/RedisTimeSeries](https://github.com/RedisTimeSeries/RedisTimeSeries)     | Redis Source Available License 2.0 | 2026-06-11 22:04:27 |
 | [valkey-io/valkey-search](https://github.com/valkey-io/valkey-search)                     | BSD 3-Clause License               | 2026-06-11 16:42:28 |
 | [valkey-io/valkey-json](https://github.com/valkey-io/valkey-json)                         | BSD 3-Clause License               | 2026-06-11 11:53:07 |
