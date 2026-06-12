@@ -1,14 +1,37 @@
+name: Refresh readme.md
 on:
-  pull_request:
-    branches: [main]
-    paths:
-      - 'readme.md'
+  schedule:
+    # Run every 4 hours on the hour (UTC).
+    - cron: '0 */4 * * *'
+  workflow_dispatch: {}
 jobs:
-  lint:
+  refresh:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-      - name: awesome-lint
-        run: ./.github/workflows/repo_linter.sh
+          # Write permission so the refreshed readme.md can be pushed back.
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install Python deps
+        run: pip install pyyaml
+      # Run the full pipeline: format readme.md from libraries.yml + template, then awesome-lint.
+      - name: Format and lint readme.md
+        run: python3 scripts/format-awesome-resp.py
+      # Commit & push only when readme.md actually changes.
+      - name: Commit refreshed readme.md
+        run: |
+          if git diff --quiet -- readme.md; then
+            echo "readme.md is already up-to-date; nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add readme.md
+          git commit -m "chore(readme): scheduled refresh from libraries.yml"
+          git push
