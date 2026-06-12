@@ -18,8 +18,14 @@ This project is developed and maintained by the [Resources team][team].
 | ----------------------------------------------------------------------------------------- | ---------------------------------- | ------------------- |
 | [RedisTimeSeries/RedisTimeSeries](https://github.com/RedisTimeSeries/RedisTimeSeries)     | Redis Source Available License 2.0 | 2026-06-11 22:04:27 |
 | [RediSearch/RediSearch](https://github.com/RediSearch/RediSearch)                         | Redis Source Available License 2.0 | 2026-06-11 20:03:05 |
+| [valkey-io/valkey-search](https://github.com/valkey-io/valkey-search)                     | BSD 3-Clause License               | 2026-06-11 16:42:28 |
+| [valkey-io/valkey-json](https://github.com/valkey-io/valkey-json)                         | BSD 3-Clause License               | 2026-06-11 11:53:07 |
+| [goodform/valkey-datasketches](https://github.com/goodform/valkey-datasketches)           | BSD 3-Clause License               | 2026-06-11 00:26:38 |
 | [RedisBloom/RedisBloom](https://github.com/RedisBloom/RedisBloom)                         | Redis Source Available License 2.0 | 2026-06-10 15:41:34 |
+| [valkey-io/valkey-bloom](https://github.com/valkey-io/valkey-bloom)                       | BSD 3-Clause License               | 2026-06-10 13:28:39 |
+| [valkey-io/valkey-luajit](https://github.com/valkey-io/valkey-luajit)                     | BSD 3-Clause License               | 2026-06-03 11:34:55 |
 | [ayarotsky/redis-shield](https://github.com/ayarotsky/redis-shield)                       | MIT License                        | 2026-06-02 10:17:33 |
+| [valkey-io/valkey-ldap](https://github.com/valkey-io/valkey-ldap)                         | BSD 3-Clause License               | 2026-05-21 15:10:18 |
 | [aviggiano/redis-roaring](https://github.com/aviggiano/redis-roaring)                     | MIT License                        | 2026-05-08 02:45:23 |
 | [sewenew/redis-llm](https://github.com/sewenew/redis-llm)                                 | Apache License                     | 2026-05-02 07:07:18 |
 | [brandur/redis-cell](https://github.com/brandur/redis-cell)                               | MIT License                        | 2026-02-14 10:31:37 |
@@ -29,6 +35,7 @@ This project is developed and maintained by the [Resources team][team].
 | [tair-opensource/TairGis](https://github.com/tair-opensource/TairGis)                     | Apache License                     | 2025-06-05 14:50:39 |
 | [tair-opensource/TairString](https://github.com/tair-opensource/TairString)               | Apache License                     | 2024-11-13 10:31:39 |
 | [tzongw/redis-timer](https://github.com/tzongw/redis-timer)                               | MIT License                        | 2024-05-03 15:26:22 |
+| [chayim/redicrypt](https://github.com/chayim/redicrypt)                                   | Unknown license                    | 2023-10-10 15:21:54 |
 | [RedisLabs/redisraft](https://github.com/RedisLabs/redisraft)                             | Redis Source Available License 2.0 | 2023-07-18 15:19:06 |
 | [wujunwei/redlock](https://github.com/wujunwei/redlock)                                   | MIT License                        | 2023-02-19 20:51:24 |
 | [tair-opensource/TairZset](https://github.com/tair-opensource/TairZset)                   | Apache License                     | 2022-12-06 21:49:47 |
