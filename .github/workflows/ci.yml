@@ -1,0 +1,34 @@
+name: CI
+on:
+  pull_request:
+    branches: [main, master]
+    paths:
+      - 'readme.md'
+      - 'readme.md.tpl'
+      - 'libraries.yml'
+      - 'scripts/**'
+      - '.github/workflows/ci.yml'
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install Python deps
+        run: pip install pyyaml
+      # 第一步：仅 format（不跑 lint），重新生成 readme.md
+      - name: Format readme.md from libraries.yml
+        run: python3 scripts/format-awesome-resp.py --no-lint
+      # 第二步：校验 readme.md 与 PR 提交版本一致；不一致 → 提示贡献者本地先 format
+      - name: Ensure readme.md is up-to-date with libraries.yml
+        run: |
+          if ! git diff --exit-code -- readme.md; then
+            echo "::error::readme.md is out of sync with libraries.yml. Run scripts/format-awesome-resp.py locally and commit the result."
+            exit 1
+          fi
+      # 第三步：对（与仓库提交一致的）readme.md 跑 awesome-lint
+      - name: awesome-lint readme.md
+        run: npx awesome-lint
