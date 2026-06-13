@@ -6,7 +6,7 @@ This project is developed and maintained by the [Resources team][team].
 
 ## Contents
 
-- [Libraries](#libraries)
+{{LIBRARIES_TOC}}
 - [SDKs](#sdks)
 - [Tools](#tools)
 - [Resources](#resources)

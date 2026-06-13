@@ -1,8 +1,8 @@
 name: Refresh readme.md
 on:
   schedule:
-    # Run every 4 hours on the hour (UTC).
-    - cron: '0 */4 * * *'
+    # Run once daily at 00:00 UTC.
+    - cron: '0 0 * * *'
   workflow_dispatch: {}
 jobs:
   refresh:

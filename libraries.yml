@@ -1,56 +1,248 @@
+categories:
+  - name: Data Types
+    description: >
+      Modules that extend Valkey/Redis with new native data types,
+      such as JSON, protobuf, Roaring Bitmaps, interval sets,
+      and enhanced Hash/String/ZSet variants.
+  - name: Search & Indexing
+    description: >
+      Full-text search, vector similarity search, secondary indexing,
+      and image similarity modules that add query capabilities beyond
+      the built-in Valkey/Redis commands.
+  - name: Probabilistic Data Structures
+    description: >
+      Memory-efficient approximate data structures including Bloom and
+      Cuckoo filters, Count-Min Sketch, Top-K, t-digest, and
+      Apache DataSketches integration.
+  - name: AI & Programmability
+    description: >
+      In-database machine-learning inference, LLM integration,
+      neural-network data types, and programmable scripting engines
+      that run user-defined logic inside Valkey/Redis.
+  - name: Infrastructure & Utilities
+    description: >
+      Rate limiters, authentication modules, consensus protocols,
+      time-series engines, distributed locks, timers, ID generators,
+      and other infrastructure building blocks.
+
 libraries:
   - url: https://github.com/tzongw/redis-timer.git
+    description: "In-process Lua script scheduler supporting periodic and one-shot timers."
+    tags: [utility]
+    category: Infrastructure & Utilities
   - url: https://github.com/f0rmiga/sessiongate.git
+    description: "HTTP session management backed by Redis with pluggable storage backends."
+    tags: [utility]
+    category: Infrastructure & Utilities
   - url: https://github.com/aviggiano/redis-roaring.git
+    description: "Compressed Roaring Bitmap commands powered by CRoaring."
+    tags: [datatype]
+    category: Data Types
   - url: https://github.com/TamarLabs/ReDe.git
+    description: "Lawn-based data dehydrator managing millions of deferred elements with timed replay."
+    tags: [timeseries]
+    category: Infrastructure & Utilities
   - url: https://github.com/erans/redissnowflake.git
+    description: "Twitter Snowflake-style 64-bit unique time-ordered ID generation."
+    tags: [id]
+    category: Infrastructure & Utilities
   - url: https://github.com/usmanm/redis-tdigest.git
+    description: "Online quantile and CDF estimation via merging t-digest sketches."
+    tags: [probabilistic]
+    category: Probabilistic Data Structures
   - url: https://github.com/sklivvz/cthulhu.git
+    description: "Embed pre-compiled JavaScript extensions via duktape for custom commands."
+    tags: [programmable]
+    category: AI & Programmability
   - url: https://github.com/antirez/neural-redis.git
+    description: "Feed-forward neural network as a native data type with inline training and inference."
+    tags: [ai]
+    category: AI & Programmability
   - url: https://github.com/brandur/redis-cell.git
+    description: "Single-command rate limiter using the GCRA algorithm."
+    tags: [ratelimit]
+    category: Infrastructure & Utilities
   - url: https://github.com/RedisGears/RedisGears.git
+    description: "Programmable execution engine running JavaScript functions and triggers inside Redis."
+    tags: [programmable]
+    category: AI & Programmability
   - url: https://github.com/RedisAI/RedisAI.git
+    description: "In-Redis deep-learning / ML model inference workload runner (archived)."
+    tags: [ai]
+    category: AI & Programmability
   - url: https://github.com/RedisBloom/RedisBloom.git
+    description: "Probabilistic data structures: Bloom/Cuckoo filters, Count-Min Sketch, Top-K, t-digest."
+    tags: [probabilistic]
+    category: Probabilistic Data Structures
   - url: https://github.com/RediSearch/RediSearch.git
+    description: "Secondary index, full-text search, vector search, and aggregation query engine."
+    tags: [search]
+    category: Search & Indexing
   - url: https://github.com/swilly22/redis-graph.git
+    description: "Early graph database module for Redis (development moved to RedisGraph main repo)."
+    tags: [graph]
+    category: Infrastructure & Utilities
   - url: https://github.com/RedisTimeSeries/RedisTimeSeries.git
+    description: "Time-series data type with downsampling, compaction, and aggregation queries."
+    tags: [timeseries]
+    category: Infrastructure & Utilities
   - url: https://github.com/danni-m/redis-timeseries.git
+    description: "Early Redis time-series implementation (superseded by RedisTimeSeries)."
+    tags: [timeseries]
+    category: Infrastructure & Utilities
   - url: https://github.com/sewenew/redis-protobuf.git
+    description: "Protobuf messages as a native Redis type with field-level path access."
+    tags: [datatype]
+    category: Data Types
   - url: https://github.com/ekzhang/redis-rope.git
+    description: "High-performance Rope (large string) data type backed by a Splay Tree."
+    tags: [datatype]
+    category: Data Types
   - url: https://github.com/OhBonsai/RedisTree.git
+    description: "Polytree (multi-way tree) native data type for hierarchical / organizational data."
+    tags: [datatype]
+    category: Data Types
   - url: https://github.com/zhao-lang/redis_hnsw.git
+    description: "Approximate nearest-neighbor vector search using the HNSW algorithm."
+    tags: [search]
+    category: Search & Indexing
   - url: https://github.com/RedisJSON/RedisJSON2.git
+    description: "JSON as a native Redis data type with JSONPath operations (superseded by RedisJSON)."
+    tags: [datatype]
+    category: Data Types
   - url: https://github.com/wujunwei/redlock.git
+    description: "Distributed lock implementation as a Redis module."
+    tags: [utility]
+    category: Infrastructure & Utilities
   - url: https://github.com/sewenew/redis-llm.git
+    description: "LLM, prompt, vector store, and conversational / retrieval application integration."
+    tags: [ai]
+    category: AI & Programmability
   - url: https://github.com/limithit/RedisPushIptables.git
+    description: "Redis-driven iptables push / linkage security firewall module."
+    tags: [utility]
+    category: Infrastructure & Utilities
   - url: https://github.com/RedisLabsModules/secondary.git
+    description: "Early secondary index module with SQL-like hash-field queries (superseded by RediSearch)."
+    tags: [search]
+    category: Search & Indexing
   - url: https://github.com/starkdg/reventis.git
+    description: "Spatio-temporal event indexing, range queries, and object tracking via space-filling curves."
+    tags: [timeseries]
+    category: Infrastructure & Utilities
   - url: https://github.com/linfangrong/redismodule-ratelimit.git
+    description: "Token-bucket rate limiter implemented as a Redis module."
+    tags: [ratelimit]
+    category: Infrastructure & Utilities
   - url: https://github.com/starkdg/Redis-ImageScout.git
+    description: "Perceptual-hash (pHash) image similarity search using MVP-trees."
+    tags: [search]
+    category: Search & Indexing
   - url: https://github.com/danitseitlin/redis-interval-sets.git
+    description: "Interval-set data type for storing and querying numeric ranges."
+    tags: [datatype]
+    category: Data Types
   - url: https://github.com/poga/redis-percentile.git
+    description: "Approximate percentile (quantile) statistics module."
+    tags: [probabilistic]
+    category: Probabilistic Data Structures
   - url: https://github.com/gsquire/redis-multi-map.git
+    description: "Multi-value map (multi-map) data type written in Rust."
+    tags: [datatype]
+    category: Data Types
   - url: https://github.com/ayarotsky/redis-shield.git
+    description: "Token-bucket rate limiter with native Valkey/Redis commands, written in Rust."
+    tags: [ratelimit]
+    category: Infrastructure & Utilities
   - url: https://github.com/infobip/redis-fpn.git
+    description: "Fixed-point-number data type with arithmetic commands for Redis 4."
+    tags: [datatype]
+    category: Data Types
   - url: https://github.com/itamarhaber/zpop.git
+    description: "ZPOP (pop min/max from sorted set) command extension."
+    tags: [utility]
+    category: Infrastructure & Utilities
   - url: https://github.com/halaei/lqrm.git
+    description: "Laravel-compatible queue driver with server-side millisecond timing and reliable blocking pop."
+    tags: [utility]
+    category: Infrastructure & Utilities
   - url: https://github.com/tair-opensource/TairHash.git
+    description: "Enhanced Hash with field-level TTL, versioning, and active expiry notifications."
+    tags: [tair]
+    category: Data Types
   - url: https://github.com/tair-opensource/TairString.git
+    description: "Enhanced String with CAS/CAD, versioning, flags, and memcached protocol support."
+    tags: [tair]
+    category: Data Types
   - url: https://github.com/tair-opensource/TairZset.git
+    description: "Enhanced ZSet supporting multi-dimensional (up to 255) score sorting."
+    tags: [tair]
+    category: Data Types
   - url: https://github.com/tair-opensource/TairGis.git
+    description: "R-Tree-based geospatial module with point/line/polygon intersect, contain, and within queries."
+    tags: [tair, geo]
+    category: Data Types
   - url: https://github.com/RedisLabs/redisraft.git
+    description: "Strongly-consistent Redis cluster built on the Raft consensus algorithm."
+    tags: [consensus]
+    category: Infrastructure & Utilities
   - url: https://github.com/RedisLabsModules/redex.git
+    description: "Command-extension collection for Keys, Strings, Hashes, Lists, Sets, ZSets, and Geo."
+    tags: [utility]
+    category: Infrastructure & Utilities
   - url: https://github.com/RedisLabsModules/RedisX.git
+    description: "Native data-type and command extensions (e.g. X.GETSETEX)."
+    tags: [utility]
+    category: Infrastructure & Utilities
   - url: https://github.com/RedisLabsModules/topk.git
+    description: "Top-K heavy-hitter data structure (superseded by RedisBloom)."
+    tags: [probabilistic]
+    category: Probabilistic Data Structures
   - url: https://github.com/RedisLabsModules/countminsketch.git
+    description: "Early Count-Min Sketch approximate counting module (superseded by RedisBloom)."
+    tags: [probabilistic]
+    category: Probabilistic Data Structures
   - url: https://github.com/RedisLabsModules/pam_auth.git
+    description: "Proof-of-concept replacing Redis native AUTH with Linux PAM authentication."
+    tags: [auth]
+    category: Infrastructure & Utilities
   - url: https://github.com/RedisLabsModules/password.git
+    description: "Secure password-hash storage and verification using bcrypt."
+    tags: [auth]
+    category: Infrastructure & Utilities
   - url: https://github.com/RedisLabsModules/rtexp.git
+    description: "Fine-grained element expiry management for real-time applications."
+    tags: [utility]
+    category: Infrastructure & Utilities
   - url: https://github.com/RedisLabsModules/graphicsmagick.git
+    description: "Proof-of-concept in-Redis image processing (rotate, etc.) via GraphicsMagick."
+    tags: [utility]
+    category: Infrastructure & Utilities
   - url: https://github.com/valkey-io/valkey-bloom.git
+    description: "Probabilistic data structures (Bloom/Cuckoo filters, Count-Min Sketch, Top-K) for Valkey."
+    tags: [probabilistic]
+    category: Probabilistic Data Structures
   - url: https://github.com/valkey-io/valkey-json.git
+    description: "Native JSON data type with JSONPath operations for Valkey."
+    tags: [datatype]
+    category: Data Types
   - url: https://github.com/valkey-io/valkey-search.git
+    description: "Full-text search, vector search, and secondary indexing for Valkey."
+    tags: [search]
+    category: Search & Indexing
   - url: https://github.com/valkey-io/valkey-ldap.git
+    description: "LDAP authentication integration for Valkey."
+    tags: [auth]
+    category: Infrastructure & Utilities
   - url: https://github.com/valkey-io/valkey-luajit.git
+    description: "LuaJIT scripting engine for Valkey with enhanced performance."
+    tags: [programmable]
+    category: AI & Programmability
   - url: https://github.com/goodform/valkey-datasketches.git
+    description: "Apache DataSketches integration providing quantile, frequency, and cardinality sketches for Valkey."
+    tags: [probabilistic]
+    category: Probabilistic Data Structures
   - url: https://github.com/chayim/redicrypt.git
+    description: "Encryption-at-rest module for Redis/Valkey data."
+    tags: [auth]
+    category: Infrastructure & Utilities
