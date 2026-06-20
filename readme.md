@@ -94,7 +94,7 @@ In-database machine-learning inference, LLM integration, neural-network data typ
 
 | Repo                                                                  | Description                                                                           | Tags           | Status                                          |
 | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------- |
-| [valkey-io/valkey-luajit](https://github.com/valkey-io/valkey-luajit) | LuaJIT scripting engine for Valkey with enhanced performance.                         | `programmable` | 2026-06-17 · BSD 3-Clause License               |
+| [valkey-io/valkey-luajit](https://github.com/valkey-io/valkey-luajit) | LuaJIT scripting engine for Valkey with enhanced performance.                         | `programmable` | 2026-06-19 · BSD 3-Clause License               |
 | [sewenew/redis-llm](https://github.com/sewenew/redis-llm)             | LLM, prompt, vector store, and conversational / retrieval application integration.    | `ai`           | 2026-05-02 · Apache License                     |
 | [RedisGears/RedisGears](https://github.com/RedisGears/RedisGears)     | Programmable execution engine running JavaScript functions and triggers inside Redis. | `programmable` | 2025-08-28 · Redis Source Available License 2.0 |
 | [RedisAI/RedisAI](https://github.com/RedisAI/RedisAI)                 | In-Redis deep-learning / ML model inference workload runner (archived).               | `ai`           | 2025-08-20 · Redis Source Available License 2.0 |
