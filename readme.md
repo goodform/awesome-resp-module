@@ -94,7 +94,7 @@ In-database machine-learning inference, LLM integration, neural-network data typ
 
 | Repo                                                                  | Description                                                                           | Tags           | Status                                          |
 | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------- |
-| [valkey-io/valkey-luajit](https://github.com/valkey-io/valkey-luajit) | LuaJIT scripting engine for Valkey with enhanced performance.                         | `programmable` | 2026-08-04 · BSD 3-Clause License               |
+| [valkey-io/valkey-luajit](https://github.com/valkey-io/valkey-luajit) | LuaJIT scripting engine for Valkey with enhanced performance.                         | `programmable` | 2026-08-06 · BSD 3-Clause License               |
 | [sewenew/redis-llm](https://github.com/sewenew/redis-llm)             | LLM, prompt, vector store, and conversational / retrieval application integration.    | `ai`           | 2026-05-02 · Apache License                     |
 | [RedisGears/RedisGears](https://github.com/RedisGears/RedisGears)     | Programmable execution engine running JavaScript functions and triggers inside Redis. | `programmable` | 2025-08-28 · Redis Source Available License 2.0 |
 | [RedisAI/RedisAI](https://github.com/RedisAI/RedisAI)                 | In-Redis deep-learning / ML model inference workload runner (archived).               | `ai`           | 2025-08-20 · Redis Source Available License 2.0 |
@@ -108,8 +108,8 @@ Full-text search, vector similarity search, secondary indexing, and image simila
 
 | Repo                                                                        | Description                                                                               | Tags     | Status                                          |
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | -------- | ----------------------------------------------- |
-| [RediSearch/RediSearch](https://github.com/RediSearch/RediSearch)           | Secondary index, full-text search, vector search, and aggregation query engine.           | `search` | 2026-08-05 · Redis Source Available License 2.0 |
-| [valkey-io/valkey-search](https://github.com/valkey-io/valkey-search)       | Full-text search, vector search, and secondary indexing for Valkey.                       | `search` | 2026-08-05 · BSD 3-Clause License               |
+| [RediSearch/RediSearch](https://github.com/RediSearch/RediSearch)           | Secondary index, full-text search, vector search, and aggregation query engine.           | `search` | 2026-08-06 · Redis Source Available License 2.0 |
+| [valkey-io/valkey-search](https://github.com/valkey-io/valkey-search)       | Full-text search, vector search, and secondary indexing for Valkey.                       | `search` | 2026-08-06 · BSD 3-Clause License               |
 | [RedisLabsModules/secondary](https://github.com/RedisLabsModules/secondary) | Early secondary index module with SQL-like hash-field queries (superseded by RediSearch). | `search` | *2020-10-19* · GNU GPL                          |
 | [starkdg/Redis-ImageScout](https://github.com/starkdg/Redis-ImageScout)     | Perceptual-hash (pHash) image similarity search using MVP-trees.                          | `search` | *2020-10-01* · Redis Source Available License   |
 | [zhao-lang/redis_hnsw](https://github.com/zhao-lang/redis_hnsw)             | Approximate nearest-neighbor vector search using the HNSW algorithm.                      | `search` | *2020-09-01* · MIT License                      |
