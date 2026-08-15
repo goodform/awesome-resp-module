@@ -108,7 +108,7 @@ Full-text search, vector similarity search, secondary indexing, and image simila
 
 | Repo                                                                        | Description                                                                               | Tags     | Status                                          |
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | -------- | ----------------------------------------------- |
-| [RediSearch/RediSearch](https://github.com/RediSearch/RediSearch)           | Secondary index, full-text search, vector search, and aggregation query engine.           | `search` | 2026-08-13 · Redis Source Available License 2.0 |
+| [RediSearch/RediSearch](https://github.com/RediSearch/RediSearch)           | Secondary index, full-text search, vector search, and aggregation query engine.           | `search` | 2026-08-14 · Redis Source Available License 2.0 |
 | [valkey-io/valkey-search](https://github.com/valkey-io/valkey-search)       | Full-text search, vector search, and secondary indexing for Valkey.                       | `search` | 2026-08-12 · BSD 3-Clause License               |
 | [RedisLabsModules/secondary](https://github.com/RedisLabsModules/secondary) | Early secondary index module with SQL-like hash-field queries (superseded by RediSearch). | `search` | *2020-10-19* · GNU GPL                          |
 | [starkdg/Redis-ImageScout](https://github.com/starkdg/Redis-ImageScout)     | Perceptual-hash (pHash) image similarity search using MVP-trees.                          | `search` | *2020-10-01* · Redis Source Available License   |
