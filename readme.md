@@ -79,7 +79,7 @@ Memory-efficient approximate data structures including Bloom and Cuckoo filters,
 
 | Repo                                                                                  | Description                                                                                         | Tags            | Status                                          |
 | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------- | ----------------------------------------------- |
-| [RedisBloom/RedisBloom](https://github.com/RedisBloom/RedisBloom)                     | Probabilistic data structures: Bloom/Cuckoo filters, Count-Min Sketch, Top-K, t-digest.             | `probabilistic` | 2026-08-05 · Redis Source Available License 2.0 |
+| [RedisBloom/RedisBloom](https://github.com/RedisBloom/RedisBloom)                     | Probabilistic data structures: Bloom/Cuckoo filters, Count-Min Sketch, Top-K, t-digest.             | `probabilistic` | 2026-08-17 · Redis Source Available License 2.0 |
 | [valkey-io/valkey-bloom](https://github.com/valkey-io/valkey-bloom)                   | Probabilistic data structures (Bloom/Cuckoo filters, Count-Min Sketch, Top-K) for Valkey.           | `probabilistic` | 2026-07-31 · BSD 3-Clause License               |
 | [goodform/valkey-datasketches](https://github.com/goodform/valkey-datasketches)       | Apache DataSketches integration providing quantile, frequency, and cardinality sketches for Valkey. | `probabilistic` | 2026-06-11 · BSD 3-Clause License               |
 | [usmanm/redis-tdigest](https://github.com/usmanm/redis-tdigest)                       | Online quantile and CDF estimation via merging t-digest sketches.                                   | `probabilistic` | *2021-01-14* · MIT License                      |
@@ -94,7 +94,7 @@ In-database machine-learning inference, LLM integration, neural-network data typ
 
 | Repo                                                                  | Description                                                                           | Tags           | Status                                          |
 | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------- |
-| [valkey-io/valkey-luajit](https://github.com/valkey-io/valkey-luajit) | LuaJIT scripting engine for Valkey with enhanced performance.                         | `programmable` | 2026-08-07 · BSD 3-Clause License               |
+| [valkey-io/valkey-luajit](https://github.com/valkey-io/valkey-luajit) | LuaJIT scripting engine for Valkey with enhanced performance.                         | `programmable` | 2026-08-17 · BSD 3-Clause License               |
 | [sewenew/redis-llm](https://github.com/sewenew/redis-llm)             | LLM, prompt, vector store, and conversational / retrieval application integration.    | `ai`           | 2026-05-02 · Apache License                     |
 | [RedisGears/RedisGears](https://github.com/RedisGears/RedisGears)     | Programmable execution engine running JavaScript functions and triggers inside Redis. | `programmable` | 2025-08-28 · Redis Source Available License 2.0 |
 | [RedisAI/RedisAI](https://github.com/RedisAI/RedisAI)                 | In-Redis deep-learning / ML model inference workload runner (archived).               | `ai`           | 2025-08-20 · Redis Source Available License 2.0 |
@@ -108,7 +108,7 @@ Full-text search, vector similarity search, secondary indexing, and image simila
 
 | Repo                                                                        | Description                                                                               | Tags     | Status                                          |
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | -------- | ----------------------------------------------- |
-| [RediSearch/RediSearch](https://github.com/RediSearch/RediSearch)           | Secondary index, full-text search, vector search, and aggregation query engine.           | `search` | 2026-08-16 · Redis Source Available License 2.0 |
+| [RediSearch/RediSearch](https://github.com/RediSearch/RediSearch)           | Secondary index, full-text search, vector search, and aggregation query engine.           | `search` | 2026-08-17 · Redis Source Available License 2.0 |
 | [valkey-io/valkey-search](https://github.com/valkey-io/valkey-search)       | Full-text search, vector search, and secondary indexing for Valkey.                       | `search` | 2026-08-12 · BSD 3-Clause License               |
 | [RedisLabsModules/secondary](https://github.com/RedisLabsModules/secondary) | Early secondary index module with SQL-like hash-field queries (superseded by RediSearch). | `search` | *2020-10-19* · GNU GPL                          |
 | [starkdg/Redis-ImageScout](https://github.com/starkdg/Redis-ImageScout)     | Perceptual-hash (pHash) image similarity search using MVP-trees.                          | `search` | *2020-10-01* · Redis Source Available License   |
