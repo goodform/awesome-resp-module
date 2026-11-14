@@ -58,7 +58,7 @@ Modules that extend Valkey/Redis with new native data types, such as JSON, proto
 
 | Repo                                                                                    | Description                                                                                    | Tags         | Status                                        |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------ | --------------------------------------------- |
-| [valkey-io/valkey-json](https://github.com/valkey-io/valkey-json)                       | Native JSON data type with JSONPath operations for Valkey.                                     | `datatype`   | 2026-11-10 · BSD 3-Clause License             |
+| [valkey-io/valkey-json](https://github.com/valkey-io/valkey-json)                       | Native JSON data type with JSONPath operations for Valkey.                                     | `datatype`   | 2026-11-13 · BSD 3-Clause License             |
 | [aviggiano/redis-roaring](https://github.com/aviggiano/redis-roaring)                   | Compressed Roaring Bitmap commands powered by CRoaring.                                        | `datatype`   | 2026-10-08 · MIT License                      |
 | [tair-opensource/TairHash](https://github.com/tair-opensource/TairHash)                 | Enhanced Hash with field-level TTL, versioning, and active expiry notifications.               | `tair`       | 2026-01-26 · Apache License                   |
 | [tair-opensource/TairGis](https://github.com/tair-opensource/TairGis)                   | R-Tree-based geospatial module with point/line/polygon intersect, contain, and within queries. | `tair` `geo` | 2025-06-05 · Apache License                   |
@@ -94,7 +94,7 @@ In-database machine-learning inference, LLM integration, neural-network data typ
 
 | Repo                                                                  | Description                                                                           | Tags           | Status                                          |
 | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------- |
-| [valkey-io/valkey-luajit](https://github.com/valkey-io/valkey-luajit) | LuaJIT scripting engine for Valkey with enhanced performance.                         | `programmable` | 2026-11-09 · BSD 3-Clause License               |
+| [valkey-io/valkey-luajit](https://github.com/valkey-io/valkey-luajit) | LuaJIT scripting engine for Valkey with enhanced performance.                         | `programmable` | 2026-11-14 · BSD 3-Clause License               |
 | [sewenew/redis-llm](https://github.com/sewenew/redis-llm)             | LLM, prompt, vector store, and conversational / retrieval application integration.    | `ai`           | 2026-05-02 · Apache License                     |
 | [RedisGears/RedisGears](https://github.com/RedisGears/RedisGears)     | Programmable execution engine running JavaScript functions and triggers inside Redis. | `programmable` | 2025-08-28 · Redis Source Available License 2.0 |
 | [RedisAI/RedisAI](https://github.com/RedisAI/RedisAI)                 | In-Redis deep-learning / ML model inference workload runner (archived).               | `ai`           | 2025-08-20 · Redis Source Available License 2.0 |
@@ -108,7 +108,7 @@ Full-text search, vector similarity search, secondary indexing, and image simila
 
 | Repo                                                                        | Description                                                                               | Tags     | Status                                          |
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | -------- | ----------------------------------------------- |
-| [valkey-io/valkey-search](https://github.com/valkey-io/valkey-search)       | Full-text search, vector search, and secondary indexing for Valkey.                       | `search` | 2026-11-12 · BSD 3-Clause License               |
+| [valkey-io/valkey-search](https://github.com/valkey-io/valkey-search)       | Full-text search, vector search, and secondary indexing for Valkey.                       | `search` | 2026-11-13 · BSD 3-Clause License               |
 | [RediSearch/RediSearch](https://github.com/RediSearch/RediSearch)           | Secondary index, full-text search, vector search, and aggregation query engine.           | `search` | 2026-11-12 · Redis Source Available License 2.0 |
 | [zhao-lang/redis_hnsw](https://github.com/zhao-lang/redis_hnsw)             | Approximate nearest-neighbor vector search using the HNSW algorithm.                      | `search` | 2026-11-08 · MIT License                        |
 | [RedisLabsModules/secondary](https://github.com/RedisLabsModules/secondary) | Early secondary index module with SQL-like hash-field queries (superseded by RediSearch). | `search` | *2020-10-19* · GNU GPL                          |
